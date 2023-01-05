@@ -38,6 +38,14 @@ user_name.count "1-9"
 
 # 2: Do some research (either testing out with your own code or Googling) to build an understanding of what the `!` does, when at the end of a method name. Show your understading by providing an example and writing an explanation.
 
+# The "!" at the end of a method causes the method to act on the variable itself, in place, rather than providing a separate output that has been modified. I'm struggling to think of how to put it into text, but if we look below
+# I believe it becomes clear what I mean.
+
+name = "Brandon"    #The variable is defined as "Brandon"
+puts name.upcase   #The .upcase method will capitalize all characters within the string variable, and output "BRANDON"
+puts name   # However, when we puts name, this will still print "Brandon" because the actual variable remains unchanged.
+puts name.upcase!    #Now, with the .upcase! method, it will actually act upon the variable itself, capitalizing the string at the source.
+puts name   # When we puts name here, the output will be "BRANDON" because the .upcase! method has modified the variable in place.
 
 
 
